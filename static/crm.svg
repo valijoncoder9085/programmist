@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="monitoring_FILL0_wght300_GRAD0_opsz24 1">
+<path id="Vector" d="M4.33337 27.6666V25.4743L6.3333 23.4744V27.6666H4.33337ZM9.6667 27.6666V20.141L11.6666 18.1411V27.6666H9.6667ZM15 27.6666V18.1411L17 20.1743V27.6666H15ZM20.3334 27.6666V20.1743L22.3333 18.1744V27.6666H20.3334ZM25.6667 27.6666V14.8077L27.6666 12.8077V27.6666H25.6667ZM4.33337 20.2922V17.4743L13.3333 8.47437L18.6667 13.8077L27.6666 4.80774V7.62561L18.6667 16.6256L13.3333 11.2922L4.33337 20.2922Z" fill="url(#paint0_linear_23_57)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_23_57" x1="4.33337" y1="2.4752" x2="31.6901" y2="4.82064" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0677E1"/>
+<stop offset="1" stop-color="#8C1FE2"/>
+</linearGradient>
+</defs>
+</svg>
