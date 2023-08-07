@@ -23,8 +23,9 @@
           <v-col cols="12" lg="9">
             <v-img src="/moskup1.svg"></v-img>
           </v-col>
-          <v-col cols="12" lg="3">
-            <v-img width="100%" src="/moskup2.svg"></v-img>
+          <v-col cols="12" lg="3" align="center">
+            <v-spacer/>
+            <v-img width="100%" src="/moskup2.svg" max-width="400"></v-img>
           </v-col>
         </v-row>
       </v-card>
@@ -43,15 +44,15 @@
         </v-card-title>
         <v-card-text>
           <v-row class="d-flex justify-space-between mt-3">
-            <v-col class="card_static" cols="12" md="3" lg="3">
+            <v-col class="card_static" cols="12" md="6" lg="3">
               <div class="font-weight-bold text-h4" style="color: black">3+</div>
               <div>Yillik tajriba</div>
             </v-col>
-            <v-col class="card_static" cols="12" md="3" lg="3">
+            <v-col class="card_static" cols="12" md="6" lg="3">
               <div class="font-weight-bold text-h4" style="color: black">13+</div>
               <div>Loyihalar</div>
             </v-col>
-            <v-col class="card_static" cols="12" md="3" lg="3">
+            <v-col class="card_static" cols="12" md="12" lg="3">
               <div class="font-weight-bold text-h4" style="color: black">13+</div>
               <div>Mutaxxasislar</div>
             </v-col>
@@ -120,7 +121,7 @@
         </v-card-title>
         <v-card-text>
           <v-row class="mt-3 d-flex justify-space-between grid-list-md">
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/web-site.svg" width="32">
@@ -131,7 +132,7 @@
                 Vebsayt yaratish
               </div>
             </v-col>
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/crm.svg" width="32">
@@ -142,7 +143,7 @@
                 CRM
               </div>
             </v-col>
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/telegram.svg" width="32">
@@ -153,7 +154,7 @@
                 Telegram bot
               </div>
             </v-col>
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/phone.svg" width="32">
@@ -164,7 +165,7 @@
                 Mobile ilovalar
               </div>
             </v-col>
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/brush.svg" width="32">
@@ -175,7 +176,7 @@
                 Grafik dizayn
               </div>
             </v-col>
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
+            <v-col style="background: #F8FBFE" class="card_static" cols="12" sm="6" md="6" lg="4">
               <div class="d-flex justify-center">
                 <p class="card--title__img">
                   <v-img src="/design.svg" width="32">
@@ -221,15 +222,16 @@
         </v-card-text>
       </v-card>
     </div>
+
     <!-- Ko'p so'raladigan savollar -->
     <div class="my-10">
       <v-row justify="space-between">
-        <v-col cols="12" md="4" lg="4">
+        <v-col cols="12" md="5" lg="6">
           <h1>
-            Eng ko’p <br> beriladigan <span style="color: #8C1FE2"> savollar</span>
+            Eng ko’p beriladigan <span style="color: #8C1FE2"> savollar</span>
           </h1>
         </v-col>
-        <v-col cols="12" md="6" lg="6">
+        <v-col cols="12" md="7" lg="6">
           <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
             <span>
               <v-btn color="blue" icon class="mr-2">
@@ -238,12 +240,14 @@
               </v-icon>
             </v-btn>
             </span>
-            <span>
+            <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -260,8 +264,10 @@
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -278,8 +284,10 @@
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -296,8 +304,10 @@
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -314,8 +324,10 @@
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -332,8 +344,10 @@
               Lorem Ipsum is simply dummy text of the printing
             </span>
             <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut voluptatem
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+              dolorem
+              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+              voluptatem
               voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
               necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
             </div>
@@ -344,9 +358,9 @@
     <!-- O'ylab ko'ring -->
     <div class="mt-16">
       <v-card class="rounded-xxl elevation-0" style="border: 1px solid #D7E0E8; overflow: hidden">
-        <v-row justify="space-between" class="pa-12" style="height: 343px" align="center">
-          <v-col cols="12" md="2" lg="2" align-self="start">
-            <v-img src="/business-goal.svg"></v-img>
+        <v-row justify="space-between" class="pa-12" style="min-height: 343px" align="center">
+          <v-col cols="12" md="2" lg="2" align-self="start" class="d-flex justify-center">
+            <v-img src="/business-goal.svg" max-width="150px"></v-img>
           </v-col>
           <v-col cols="12" md="6" lg="6" class="text-center">
             <v-card-title>
@@ -365,8 +379,8 @@
               <BTNComponents/>
             </v-card-actions>
           </v-col>
-          <v-col cols="12" md="2" lg="2" align-self="end">
-            <v-img src="repair-tool.svg"></v-img>
+          <v-col cols="12" md="2" lg="2" align-self="end" class="d-flex justify-center">
+            <v-img src="repair-tool.svg" max-width="150px"></v-img>
           </v-col>
         </v-row>
       </v-card>
@@ -401,14 +415,16 @@ a {
   border-radius: 50%;
   background-color: rgba(215, 227, 238, 0.68);
 }
-.hidden-card{
-  .hidden-active{
+
+.hidden-card {
+  .hidden-active {
     display: none;
     opacity: 0;
   }
 }
-.hidden-card:hover{
-  .hidden-active{
+
+.hidden-card:hover {
+  .hidden-active {
     display: block;
     opacity: 1;
   }

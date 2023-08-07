@@ -1,6 +1,8 @@
 <template>
   <div>
-    <SidebarPage/>
+    <v-container class="elevation-0">
+      <SidebarPage/>
+    </v-container>
   </div>
 </template>
 

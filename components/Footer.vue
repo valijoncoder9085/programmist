@@ -1,11 +1,10 @@
 <template>
-  <v-row class="my-6 elevation-1 rounded-xxl">
-    <v-col></v-col>
+  <v-row class="mt-6 mb-1 elevation-1 rounded-xxl">
     <v-spacer/>
-    <v-col cols="12" md="4" lg="5">
+    <v-col cols="12" sm="12" md="7" lg="5" class="d-flex justify-center">
       <div>www.programmist.uz Barcha huquqlar himoyalangan</div>
     </v-col>
-    <v-col cols="12" md="3" lg="3">
+    <v-col cols="12" sm="12" md="4" lg="3">
       <div class="text-center">
         <v-btn elevation="0" text>
           <v-icon class="mr-1">
