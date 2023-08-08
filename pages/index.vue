@@ -6,19 +6,21 @@
           <p style="font-size: 16px">Biznesingizni keyingi bosqichga olib chiqish yoki g’oyalaringizni binzesga
             aylantirish haqida
             qayg’uryapsizmi?</p>
-          <p class="text-h2 font-weight-bold" style="color: #000">
-            <span class="text-h2 font-weight-bold" style="color: #0677E1">Programmist.uz </span>bilan tanishing
+          <p class="title-pro text-h2 font-weight-bold" style="color: #000">
+            <span class="title-pro text-h2 font-weight-bold" style="color: #0677E1">Programmist.uz </span>bilan
+            tanishing
           </p>
           <p style="font-size: 16px">
             Hurmat bilan, Mijozlar muammosiga IT orqali yechim beruvchi jamoa!
           </p>
         </v-card-text>
         <v-card-actions>
-          <v-spacer/>
-          <BTNComponents/>
-          <v-spacer/>
+          <v-row justify="center">
+            <v-col cols="12" sm="8" md="6" lg="4">
+              <BTNComponents/>
+            </v-col>
+          </v-row>
         </v-card-actions>
-
         <v-row class="mt-8">
           <v-col cols="12" lg="9">
             <v-img src="/moskup1.svg"></v-img>
@@ -37,7 +39,7 @@
         <v-card-title>
           <v-spacer/>
           <h1>
-            <nuxt-link to="#xizmatlar" style="color: black">Bizning<span style="color: #8C1FE2"> statistika</span>
+            <nuxt-link to="#xizmatlar" class="statistik-title" style="color: black">Bizning<span style="color: #8C1FE2"> statistika</span>
             </nuxt-link>
           </h1>
           <v-spacer/>
@@ -114,7 +116,7 @@
         <v-card-title>
           <v-spacer/>
           <h1 id="xizmatlar">
-            <p style="color: black">Bizning<span style="color: #8C1FE2"> xizmatlar</span>
+            <p style="color: black" class="statistik-title">Bizning<span style="color: #8C1FE2"> xizmatlar</span>
             </p>
           </h1>
           <v-spacer/>
@@ -187,7 +189,9 @@
                 UX/UI Dizayn
               </div>
             </v-col>
-            <v-col cols="12">
+          </v-row>
+          <v-row justify="center">
+            <v-col cols="12" sm="10" md="8" lg="6">
               <BTNComponents/>
             </v-col>
           </v-row>
@@ -200,7 +204,7 @@
         <v-card-title>
           <v-spacer/>
           <h1 id="xamkorlar">
-            <p style="color: black">Bizning<span style="color: #8C1FE2"> xamkorlar</span>
+            <p style="color: black" class="statistik-title">Bizning<span style="color: #8C1FE2"> xamkorlar</span>
             </p>
           </h1>
           <v-spacer/>
@@ -388,125 +392,135 @@
           </h1>
         </v-col>
         <v-col cols="12" md="7" lg="6">
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span class="text-center">
+          <div class="hidden-card elevation-1 rounded-xxl mb-3">
+            <v-row>
+              <v-col cols="1">
+                <span>
+                  <v-btn color="blue" icon>
+                  <v-icon>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+                </span>
+              </v-col>
+              <v-col>
+                <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
+                <div class="hidden-active mt-2 text-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+                  dolorem
+                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+                  voluptatem
+                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
+                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
+                </div>
+              </v-col>
+            </v-row>
           </div>
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span>
+          <div class="hidden-card elevation-1 rounded-xxl mb-3">
+            <v-row>
+              <v-col cols="1">
+                <span>
+                  <v-btn color="blue" icon>
+                  <v-icon>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+                </span>
+              </v-col>
+              <v-col>
+                <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
+                <div class="hidden-active mt-2 text-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+                  dolorem
+                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+                  voluptatem
+                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
+                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
+                </div>
+              </v-col>
+            </v-row>
           </div>
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span>
+          <div class="hidden-card elevation-1 rounded-xxl mb-3">
+            <v-row>
+              <v-col cols="1">
+                <span>
+                  <v-btn color="blue" icon>
+                  <v-icon>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+                </span>
+              </v-col>
+              <v-col>
+                <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
+                <div class="hidden-active mt-2 text-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+                  dolorem
+                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+                  voluptatem
+                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
+                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
+                </div>
+              </v-col>
+            </v-row>
           </div>
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span>
+          <div class="hidden-card elevation-1 rounded-xxl mb-3">
+            <v-row>
+              <v-col cols="1">
+                <span>
+                  <v-btn color="blue" icon>
+                  <v-icon>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+                </span>
+              </v-col>
+              <v-col>
+                <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
+                <div class="hidden-active mt-2 text-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+                  dolorem
+                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+                  voluptatem
+                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
+                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
+                </div>
+              </v-col>
+            </v-row>
           </div>
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span>
+          <div class="hidden-card elevation-1 rounded-xxl mb-3">
+            <v-row>
+              <v-col cols="1">
+                <span>
+                  <v-btn color="blue" icon>
+                  <v-icon>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+                </span>
+              </v-col>
+              <v-col>
+                <span class="text-center">
               Lorem Ipsum is simply dummy text of the printing
             </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
-          </div>
-          <div class="hidden-card elevation-1 rounded-xxl pa-1 mb-3">
-            <span>
-              <v-btn color="blue" icon class="mr-2">
-              <v-icon>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-            </span>
-            <span>
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-            <div class="hidden-active pl-12 pb-3 pr-3 text-caption">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-              dolorem
-              ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-              voluptatem
-              voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-              necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-            </div>
+                <div class="hidden-active mt-2 text-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
+                  dolorem
+                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
+                  voluptatem
+                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
+                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
+                </div>
+              </v-col>
+            </v-row>
           </div>
         </v-col>
       </v-row>
@@ -531,8 +545,12 @@
               Biznesingizni keyingi bosqichga olib chiqish yoki g’oyalaringizni biznesga aylantirish haqida
               qayg’uryapsizmi?
             </v-card-text>
-            <v-card-actions class="d-flex justify-center">
-              <BTNComponents/>
+            <v-card-actions>
+              <v-row justify="center">
+                <v-col cols="12" sm="8" md="10" lg="8">
+                  <BTNComponents/>
+                </v-col>
+              </v-row>
             </v-card-actions>
           </v-col>
           <v-col cols="12" md="2" lg="2" align-self="end" class="d-flex justify-center">
@@ -601,7 +619,20 @@ a {
     display: inline;
   }
 }
-.v-window__prev:hover{
+
+.v-window__prev:hover {
   background-color: red;
+}
+
+@media (max-width: 502px) {
+  .title-pro {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .statistik-title {
+    font-size: 30px !important;
+  }
 }
 </style>

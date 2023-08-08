@@ -9,9 +9,15 @@
         <v-card elevation="0">
           <v-card-title>
             <nuxt-link to="/">
-              <p class="d-flex align-center mb-0 text-caption"><img src="/logo.svg" alt="logo" width="30"
-                                                                    class="mr-2">Test<span
-                style="color: #45A4FF;">Design</span></p>
+              <p class=" d-flex align-center mb-0 text-caption">
+                <img
+                  src="/logo.svg"
+                  alt="logo"
+                  width="30"
+                  class="mr-2"
+                >
+                Test<span style="color: #45A4FF;">Design</span>
+              </p>
             </nuxt-link>
             <v-spacer/>
             <v-btn @click="drawer = !drawer" icon>
@@ -98,7 +104,6 @@
         <FooterComponents/>
       </v-footer>
     </v-app>
-
   </div>
 </template>
 <script>
@@ -163,7 +168,10 @@ ul {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 502px) {
+  .title-pro{
+    font-size: 12px!important;
+  }
   .menu-phone {
     display: none;
   }
