@@ -195,8 +195,8 @@
       </v-card>
     </div>
     <!-- Bizning hamkorlar -->
-    <div class="d-flex justify-center text-center mt-16" style="width: 100%!important;">
-      <v-card elevation="0" width="900">
+    <div class="mt-16 mx-auto">
+      <v-card elevation="0">
         <v-card-title>
           <v-spacer/>
           <h1 id="xamkorlar">
@@ -205,20 +205,176 @@
           </h1>
           <v-spacer/>
         </v-card-title>
-        <v-card-text>
-          <v-row class="mt-3 d-flex justify-space-between">
-            <v-col style="background: #F8FBFE" class="card_static" cols="12" md="6" lg="4">
-              <div class="d-flex justify-center">
-                <p class="card--title__img">
-                  <v-img src="/web-site.svg" width="32">
-                  </v-img>
-                </p>
-              </div>
-              <div>
-                Vebsayt yaratish
-              </div>
-            </v-col>
-          </v-row>
+        <v-card-text class="px-0 mt-10">
+          <v-card elevation="0">
+            <v-carousel
+              hide-delimiters
+              height="200px"
+              class="carousel-card__container"
+            >
+              <template v-slot:prev="{ on, attrs }">
+                <v-btn
+                  icon
+                  class="prev-btn"
+                  style="background-color: #fff; border: 1px solid #D7E0E8"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon color="#0677E1">
+                    mdi-chevron-left
+                  </v-icon>
+                </v-btn>
+              </template>
+              <template v-slot:next="{ on, attrs }">
+                <v-btn
+                  icon
+                  style="background-color: #fff; border: 1px solid #D7E0E8"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon color="#0677E1">
+                    mdi-chevron-right
+                  </v-icon>
+                </v-btn>
+              </template>
+              <v-carousel-item>
+                <div class="mt-3 ml-3" style="height: 100%; width: 100%">
+                  <v-row class="carousel-card" style="width: 100%; height: 100%" justify="space-around" align="center">
+                    <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                           style="min-width: 200px; border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/uzum.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                    <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                           style="min-width: 200px; border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                    <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                           style="min-width: 200px; border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                    <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                           style="min-width: 200px; border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item>
+                <v-row class="carousel-card" style="width: 100%; height: 100%" justify="space-around" align="center">
+                  <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                         style="min-width: 200px; border: 1px solid #D7E0E8">
+                    <div>
+                      <v-img class="mx-auto" src="/uzum.svg" max-width="100px"></v-img>
+                    </div>
+                  </v-col>
+                  <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                         style="min-width: 200px; border: 1px solid #D7E0E8">
+                    <div>
+                      <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                    </div>
+                  </v-col>
+                  <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                         style="min-width: 200px; border: 1px solid #D7E0E8">
+                    <div>
+                      <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                    </div>
+                  </v-col>
+                  <v-col cols="5" sm="5" md="2" lg="2" class="rounded-xxl"
+                         style="min-width: 200px; border: 1px solid #D7E0E8">
+                    <div>
+                      <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                    </div>
+                  </v-col>
+                </v-row>
+              </v-carousel-item>
+            </v-carousel>
+            <v-carousel
+              hide-delimiters
+              height="120px"
+              class="carousel-card__container-card"
+            >
+              <template v-slot:prev="{ on, attrs }">
+                <v-btn
+                  icon
+                  style="background-color: #fff; border: 1px solid #D7E0E8"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon color="#0677E1">
+                    mdi-chevron-left
+                  </v-icon>
+                </v-btn>
+              </template>
+              <template v-slot:next="{ on, attrs }">
+                <v-btn
+                  icon
+                  style="background-color: #fff; border: 1px solid #D7E0E8"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon color="#0677E1">
+                    mdi-chevron-right
+                  </v-icon>
+                </v-btn>
+              </template>
+              <v-carousel-item>
+                <div class="mt-3 ml-3" style="height: 100%; width: 100%">
+                  <v-row class="carousel-card" style="width: 100%; height: 100%" align="center">
+                    <v-col class="rounded-xxl"
+                           style="width: 100%; border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/uzum.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item>
+                <div class="mt-3 ml-3" style="height: 100%; width: 100%">
+                  <v-row class="carousel-card" style="width: 100%; height: 100%" align="center">
+                    <v-col class="rounded-xxl"
+                           style="border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item>
+                <div class="mt-3 ml-3" style="height: 100%; width: 100%">
+                  <v-row class="carousel-card" style="width: 100%; height: 100%" align="center">
+                    <v-col class="rounded-xxl"
+                           style="border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item>
+                <div class="mt-3 ml-3" style="height: 100%; width: 100%">
+                  <v-row class="carousel-card" style="width: 100%; height: 100%" align="center">
+                    <v-col class="rounded-xxl"
+                           style=" border: 1px solid #D7E0E8">
+                      <div>
+                        <v-img class="mx-auto" src="/avtosavdo.svg" max-width="100px"></v-img>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-carousel-item>
+            </v-carousel>
+          </v-card>
         </v-card-text>
       </v-card>
     </div>
@@ -392,10 +548,13 @@
 import BTNComponents from "@/components/Btn.vue";
 
 export default {
-  components: {BTNComponents},
+  components: {
+    BTNComponents,
+
+  },
   data() {
     return {}
-  }
+  },
 }
 </script>
 
@@ -428,5 +587,21 @@ a {
     display: block;
     opacity: 1;
   }
+}
+
+.carousel-card__container-card {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .carousel-card__container {
+    display: none;
+  }
+  .carousel-card__container-card {
+    display: inline;
+  }
+}
+.v-window__prev:hover{
+  background-color: red;
 }
 </style>
