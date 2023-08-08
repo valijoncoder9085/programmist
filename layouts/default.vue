@@ -17,7 +17,7 @@ import FooterComponents from "@/components/Footer.vue";
 window.addEventListener('scroll', () => {
   const toTopBtn = document.getElementById('to-top');
   const scrollY = window.scrollY;
-  if (Math.ceil(scrollY) > 300){
+  if (Math.ceil(scrollY) > 400){
     toTopBtn.style.opacity = '1';
   }
   else {
@@ -39,6 +39,7 @@ export default {
   position: fixed;
   right: 3%;
   bottom: 3%;
+  opacity: 0;
   background: linear-gradient(139deg, #0677E1 0%, #8C1FE2 100%);
   transition: all .4s ease;
 }
