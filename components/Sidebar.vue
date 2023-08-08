@@ -93,7 +93,9 @@
         </div>
       </v-app-bar>
       <v-main>
-        <Nuxt/>
+        <v-container>
+          <Nuxt/>
+        </v-container>
       </v-main>
       <v-footer
         class="rounded-xxl container"
