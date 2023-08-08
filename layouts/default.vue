@@ -15,6 +15,7 @@
 import SidebarPage from "~/components/Sidebar.vue";
 import FooterComponents from "@/components/Footer.vue";
 window.addEventListener('scroll', () => {
+
   const toTopBtn = document.getElementById('to-top');
   const scrollY = window.scrollY;
   if (Math.ceil(scrollY) > 400){
@@ -29,7 +30,10 @@ export default {
   components: {FooterComponents, SidebarPage},
   methods:{
     clickBtn(){
-      window.scrollTo(0, 0)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     }
   },
 }
