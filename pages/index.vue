@@ -525,6 +525,7 @@
           </v-col>
         </v-row>
       </v-card>
+
     </div>
   </div>
 </template>
@@ -540,6 +541,7 @@ AOS.init({
   animatedClassName: 'animated',
 });
 AOS.refreshHard();
+
 export default {
   components: {
     BTNComponents,
@@ -548,10 +550,12 @@ export default {
   data() {
     return {}
   },
+
 }
 </script>
 
 <style lang="scss" scoped>
+
 a {
   text-decoration: none;
 }

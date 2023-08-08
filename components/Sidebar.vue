@@ -107,9 +107,7 @@
   </div>
 </template>
 <script>
-
 import FooterComponents from "@/components/Footer.vue";
-
 export default {
   name: 'SidebarPage',
   components: {FooterComponents},
@@ -133,9 +131,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
 .menu-burger {
   display: none;
 }
