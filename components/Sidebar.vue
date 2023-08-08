@@ -128,13 +128,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-v-toolbar__content {
-  display: contents;
-}
 
-v-application--wrap {
-  background-color: red !important;;
-}
+
 
 .menu-burger {
   display: none;
