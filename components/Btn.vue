@@ -8,7 +8,7 @@
       dark>
       Bepul konsultatsiya olish
     </v-btn>
-    <v-dialog v-model="dialog" width="500">
+    <v-dialog v-model="dialog" width="500" transition="slide-x-transition">
       <v-card>
         <v-card-title>
           <h3>Bepul <span style="color: #8C1FE2"> konsultatsiya</span></h3>

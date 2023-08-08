@@ -93,9 +93,7 @@
         </div>
       </v-app-bar>
       <v-main>
-        <v-container>
-          <Nuxt/>
-        </v-container>
+        <Nuxt/>
       </v-main>
       <v-footer
         class="rounded-xxl container"
@@ -108,6 +106,7 @@
 </template>
 <script>
 import FooterComponents from "@/components/Footer.vue";
+
 export default {
   name: 'SidebarPage',
   components: {FooterComponents},
@@ -164,8 +163,8 @@ ul {
 }
 
 @media (max-width: 502px) {
-  .title-pro{
-    font-size: 12px!important;
+  .title-pro {
+    font-size: 12px !important;
   }
   .menu-phone {
     display: none;

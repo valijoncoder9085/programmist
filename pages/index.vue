@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div data-aos="fade-down-right" data-aos-delay="150">
+    <div>
       <v-card class="elevation-0 mt-9">
         <v-card-text class="text-center">
           <p style="font-size: 16px">Biznesingizni keyingi bosqichga olib chiqish yoki g’oyalaringizni binzesga
@@ -16,24 +16,23 @@
         </v-card-text>
         <v-card-actions>
           <v-row justify="center">
-            <v-col cols="12" sm="8" md="6" lg="4">
+            <v-col cols="12" sm="10" md="10" lg="8">
               <BTNComponents/>
             </v-col>
           </v-row>
         </v-card-actions>
         <v-row class="mt-8">
-          <v-col data-aos="fade-down-right" cols="12" lg="9">
+          <v-col cols="12" lg="9">
             <v-img src="/moskup1.svg"></v-img>
           </v-col>
-          <v-col data-aos="fade-down-left" cols="12" lg="3" align="center">
-            <v-spacer/>
+          <v-col cols="12" lg="3" class="d-flex justify-center">
             <v-img class="phone-image" width="100%" src="/moskup2.svg" max-width="400"></v-img>
           </v-col>
         </v-row>
       </v-card>
     </div>
     <!-- Bizning statistika -->
-    <div data-aos="fade-down-left" data-aos-offset="200" data-aos-delay="200"
+    <div
          class="d-flex justify-center text-center mt-16">
       <v-card elevation="0" width="900">
         <v-card-title>
@@ -514,7 +513,7 @@
             </v-card-text>
             <v-card-actions>
               <v-row justify="center">
-                <v-col cols="12" sm="8" md="10" lg="8">
+                <v-col cols="12" sm="10" md="10" lg="8">
                   <BTNComponents/>
                 </v-col>
               </v-row>
@@ -606,6 +605,7 @@ a {
 @media (max-width: 450px) {
   .carousel-card__container {
     display: none;
+
   }
   .carousel-card__container-card {
     display: inline;
