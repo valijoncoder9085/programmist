@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div data-aos="fade-down-right" data-aos-delay="150">
       <v-card class="elevation-0 mt-9">
         <v-card-text class="text-center">
           <p style="font-size: 16px">Biznesingizni keyingi bosqichga olib chiqish yoki g’oyalaringizni binzesga
@@ -22,10 +22,10 @@
           </v-row>
         </v-card-actions>
         <v-row class="mt-8">
-          <v-col cols="12" lg="9">
+          <v-col data-aos="fade-down-right" cols="12" lg="9">
             <v-img src="/moskup1.svg"></v-img>
           </v-col>
-          <v-col cols="12" lg="3" align="center">
+          <v-col data-aos="fade-down-left" cols="12" lg="3" align="center">
             <v-spacer/>
             <v-img class="phone-image" width="100%" src="/moskup2.svg" max-width="400"></v-img>
           </v-col>
@@ -34,7 +34,8 @@
     </div>
 
     <!-- Bizning statistika -->
-    <div class="d-flex justify-center text-center mt-16">
+    <div data-aos="fade-down-left" data-aos-offset="200" data-aos-delay="200"
+         class="d-flex justify-center text-center mt-16">
       <v-card elevation="0" width="900">
         <v-card-title>
           <v-spacer/>
@@ -62,7 +63,7 @@
         </v-card-text>
       </v-card>
     </div>
-    <div class="mt-12">
+    <div data-aos="flip-left" data-aos-delay="200" class="mt-12">
       <v-card
         style="box-shadow: 0px 6px 24px 0px rgba(139, 141, 144, 0.08); border: 1px solid #D7E0E8; overflow: hidden"
         class="rounded-xxl">
@@ -111,7 +112,9 @@
     </div>
 
     <!-- Bizning xizmatlar -->
-    <div class="d-flex justify-center text-center mt-16" style="width: 100%!important;">
+    <div data-aos="fade-up"
+         data-aos-duration="3000" class="d-flex justify-center text-center mt-16"
+         style="width: 100%!important;">
       <v-card elevation="0" width="900">
         <v-card-title>
           <v-spacer/>
@@ -199,7 +202,11 @@
       </v-card>
     </div>
     <!-- Bizning hamkorlar -->
-    <div class="mt-16 mx-auto">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      class="mt-16 mx-auto">
       <v-card elevation="0">
         <v-card-title>
           <v-spacer/>
@@ -384,7 +391,8 @@
     </div>
 
     <!-- Ko'p so'raladigan savollar -->
-    <div class="my-10">
+    <div data-aos="fade-up"
+         data-aos-anchor-placement="top-bottom" class="my-10">
       <v-row justify="space-between">
         <v-col cols="12" md="5" lg="6">
           <h1>
@@ -484,7 +492,8 @@
       </v-row>
     </div>
     <!-- O'ylab ko'ring -->
-    <div class="mt-16">
+    <div data-aos="fade-up"
+         data-aos-anchor-placement="top-center" class="mt-16">
       <v-card class="rounded-xxl elevation-0" style="border: 1px solid #D7E0E8; overflow: hidden">
         <v-row justify="space-between" class="pa-12" style="min-height: 343px" align="center">
           <v-col cols="12" md="2" lg="2" align-self="start" class="d-flex justify-center">
@@ -522,8 +531,16 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import BTNComponents from "@/components/Btn.vue";
 
+AOS.init({
+  useClassNames: true,
+  initClassName: false,
+  animatedClassName: 'animated',
+});
+AOS.refreshHard();
 export default {
   components: {
     BTNComponents,
@@ -579,13 +596,11 @@ a {
     max-width: 300px !important;
   }
 }
-
 @media (max-width: 502px) {
   .title-pro {
     font-size: 40px !important;
   }
 }
-
 @media (max-width: 450px) {
   .carousel-card__container {
     display: none;
@@ -594,7 +609,6 @@ a {
     display: inline;
   }
 }
-
 @media (max-width: 425px) {
   .statistik-title {
     font-size: 28px !important;
