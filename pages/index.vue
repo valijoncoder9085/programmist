@@ -392,136 +392,94 @@
           </h1>
         </v-col>
         <v-col cols="12" md="7" lg="6">
-          <div class="hidden-card elevation-1 rounded-xxl mb-3">
-            <v-row>
-              <v-col cols="1">
-                <span>
-                  <v-btn color="blue" icon>
-                  <v-icon>
-                    mdi-chevron-down
-                  </v-icon>
-                </v-btn>
-                </span>
-              </v-col>
-              <v-col>
-                <span class="text-center">
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-                <div class="hidden-active mt-2 text-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-                  dolorem
-                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-                  voluptatem
-                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-          <div class="hidden-card elevation-1 rounded-xxl mb-3">
-            <v-row>
-              <v-col cols="1">
-                <span>
-                  <v-btn color="blue" icon>
-                  <v-icon>
-                    mdi-chevron-down
-                  </v-icon>
-                </v-btn>
-                </span>
-              </v-col>
-              <v-col>
-                <span class="text-center">
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-                <div class="hidden-active mt-2 text-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-                  dolorem
-                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-                  voluptatem
-                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-          <div class="hidden-card elevation-1 rounded-xxl mb-3">
-            <v-row>
-              <v-col cols="1">
-                <span>
-                  <v-btn color="blue" icon>
-                  <v-icon>
-                    mdi-chevron-down
-                  </v-icon>
-                </v-btn>
-                </span>
-              </v-col>
-              <v-col>
-                <span class="text-center">
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-                <div class="hidden-active mt-2 text-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-                  dolorem
-                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-                  voluptatem
-                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-          <div class="hidden-card elevation-1 rounded-xxl mb-3">
-            <v-row>
-              <v-col cols="1">
-                <span>
-                  <v-btn color="blue" icon>
-                  <v-icon>
-                    mdi-chevron-down
-                  </v-icon>
-                </v-btn>
-                </span>
-              </v-col>
-              <v-col>
-                <span class="text-center">
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-                <div class="hidden-active mt-2 text-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-                  dolorem
-                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-                  voluptatem
-                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-          <div class="hidden-card elevation-1 rounded-xxl mb-3">
-            <v-row>
-              <v-col cols="1">
-                <span>
-                  <v-btn color="blue" icon>
-                  <v-icon>
-                    mdi-chevron-down
-                  </v-icon>
-                </v-btn>
-                </span>
-              </v-col>
-              <v-col>
-                <span class="text-center">
-              Lorem Ipsum is simply dummy text of the printing
-            </span>
-                <div class="hidden-active mt-2 text-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae cum deleniti
-                  dolorem
-                  ea eligendi enim error impedit molestias nesciunt nulla, perspiciatis praesentium quas quidem, ut
-                  voluptatem
-                  voluptates? Ad atque blanditiis consequatur doloribus ducimus enim illum in incidunt itaque mollitia
-                  necessitatibus nemo odio perspiciatis, praesentium quam quasi ratione soluta.
-                </div>
-              </v-col>
-            </v-row>
-          </div>
+          <v-expansion-panels class="my-2">
+            <v-expansion-panel class="rounded-xl mb-5">
+              <v-expansion-panel-header
+                class="rounded-xl"
+              >
+                <template #actions>
+                  <v-btn icon>
+                    <v-icon color="#0677E1">
+                      mdi-chevron-down
+                    </v-icon>
+                  </v-btn>
+                </template>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugit.
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto beatae commodi
+                consequatur culpa doloribus est exercitationem facilis, fugit hic ipsum iusto labore magni modi nobis
+                provident quam quisquam repudiandae ut? Beatae enim impedit nam nihil porro provident quaerat quasi sint
+                sunt voluptate? Animi obcaecati officia omnis quae quia.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+          <v-expansion-panels class="my-2">
+            <v-expansion-panel class="rounded-xl mb-5">
+              <v-expansion-panel-header
+                class="rounded-xl"
+              >
+                <template #actions>
+                  <v-btn icon>
+                    <v-icon color="#0677E1">
+                      mdi-chevron-down
+                    </v-icon>
+                  </v-btn>
+                </template>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugit.
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto beatae commodi
+                consequatur culpa doloribus est exercitationem facilis, fugit hic ipsum iusto labore magni modi nobis
+                provident quam quisquam repudiandae ut? Beatae enim impedit nam nihil porro provident quaerat quasi sint
+                sunt voluptate? Animi obcaecati officia omnis quae quia.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+          <v-expansion-panels class="my-2">
+            <v-expansion-panel class="rounded-xl mb-5">
+              <v-expansion-panel-header
+                class="rounded-xl"
+              >
+                <template #actions>
+                  <v-btn icon>
+                    <v-icon color="#0677E1">
+                      mdi-chevron-down
+                    </v-icon>
+                  </v-btn>
+                </template>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugit.
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto beatae commodi
+                consequatur culpa doloribus est exercitationem facilis, fugit hic ipsum iusto labore magni modi nobis
+                provident quam quisquam repudiandae ut? Beatae enim impedit nam nihil porro provident quaerat quasi sint
+                sunt voluptate? Animi obcaecati officia omnis quae quia.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+          <v-expansion-panels class="my-2">
+            <v-expansion-panel class="rounded-xl mb-5">
+              <v-expansion-panel-header
+                class="rounded-xl"
+              >
+                <template #actions>
+                  <v-btn icon>
+                    <v-icon color="#0677E1">
+                      mdi-chevron-down
+                    </v-icon>
+                  </v-btn>
+                </template>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugit.
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto beatae commodi
+                consequatur culpa doloribus est exercitationem facilis, fugit hic ipsum iusto labore magni modi nobis
+                provident quam quisquam repudiandae ut? Beatae enim impedit nam nihil porro provident quaerat quasi sint
+                sunt voluptate? Animi obcaecati officia omnis quae quia.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </v-col>
       </v-row>
     </div>
@@ -536,7 +494,8 @@
             <v-card-title>
               <v-spacer/>
               <h1>
-                <nuxt-link to="#xizmatlar" class="statistik-title" style="color: black">O'ylab<span style="color: #8C1FE2"> ko'ring!</span>
+                <nuxt-link to="#xizmatlar" class="statistik-title" style="color: black">O'ylab<span
+                  style="color: #8C1FE2"> ko'ring!</span>
                 </nuxt-link>
               </h1>
               <v-spacer/>
@@ -611,6 +570,22 @@ a {
   display: none;
 }
 
+.v-window__prev:hover {
+  background-color: red;
+}
+
+@media (max-width: 700px) {
+  .phone-image {
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 502px) {
+  .title-pro {
+    font-size: 40px !important;
+  }
+}
+
 @media (max-width: 450px) {
   .carousel-card__container {
     display: none;
@@ -620,20 +595,6 @@ a {
   }
 }
 
-.v-window__prev:hover {
-  background-color: red;
-}
-
-@media (max-width: 502px) {
-  .title-pro {
-    font-size: 40px !important;
-  }
-}
-@media (max-width: 700px) {
-  .phone-image {
-    max-width: 300px !important;
-  }
-}
 @media (max-width: 425px) {
   .statistik-title {
     font-size: 28px !important;
