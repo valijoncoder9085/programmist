@@ -1,12 +1,14 @@
 <template>
   <div>
     <SidebarPage/>
-    <v-btn @click="toTopScroll" ref="to-top" id="to-top" class="rounded-xl"
-           style="background:linear-gradient(139deg, #0677E1 0%, #8C1FE2 100%);" dark>
-      <v-icon>
-        mdi-chevron-up
-      </v-icon>
-    </v-btn>
+    <v-container>
+      <v-btn @click="toTopScroll" ref="to-top" id="to-top" class="rounded-xl"
+             style="background:linear-gradient(139deg, #0677E1 0%, #8C1FE2 100%);" dark>
+        <v-icon>
+          mdi-chevron-up
+        </v-icon>
+      </v-btn>
+    </v-container>
   </div>
 </template>
 
@@ -39,10 +41,13 @@ export default {
 <style lang="scss">
 #to-top {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 180px;
+  bottom: 100px;
   opacity: 0;
-  transition: all .5s ease;
+  height: 50px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all .3s ease;
 }
 
 @media (max-width: 980px) {
