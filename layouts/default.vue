@@ -41,8 +41,8 @@ export default {
 <style lang="scss">
 #to-top {
   position: fixed;
-  right: 30px;
-  bottom: 20px;
+  right: 2.5%;
+  bottom: 2.5%;
   opacity: 0;
   transition: all .2s ease;
 }
