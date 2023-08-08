@@ -2,7 +2,7 @@
   <div>
     <v-btn
       @click="click"
-      class="text-capitalize py-6 rounded-xl"
+      class="btn text-capitalize py-6 rounded-xl"
       width="100%"
       style="background: linear-gradient(139deg, #0677E1 0%, #8C1FE2 100%);"
       dark>
@@ -123,5 +123,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@media (max-width: 350px) {
+  .btn{
+    font-size: 12px!important;
+    padding: 2px 6px!important;
+  }
+}
 </style>

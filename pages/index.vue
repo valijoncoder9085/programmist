@@ -27,7 +27,7 @@
           </v-col>
           <v-col cols="12" lg="3" align="center">
             <v-spacer/>
-            <v-img width="100%" src="/moskup2.svg" max-width="400"></v-img>
+            <v-img class="phone-image" width="100%" src="/moskup2.svg" max-width="400"></v-img>
           </v-col>
         </v-row>
       </v-card>
@@ -536,7 +536,7 @@
             <v-card-title>
               <v-spacer/>
               <h1>
-                <nuxt-link to="#xizmatlar" style="color: black">O'ylab<span style="color: #8C1FE2"> ko'ring!</span>
+                <nuxt-link to="#xizmatlar" class="statistik-title" style="color: black">O'ylab<span style="color: #8C1FE2"> ko'ring!</span>
                 </nuxt-link>
               </h1>
               <v-spacer/>
@@ -629,10 +629,18 @@ a {
     font-size: 40px !important;
   }
 }
-
-@media (max-width: 400px) {
-  .statistik-title {
-    font-size: 30px !important;
+@media (max-width: 700px) {
+  .phone-image {
+    max-width: 300px !important;
   }
 }
+@media (max-width: 425px) {
+  .statistik-title {
+    font-size: 28px !important;
+  }
+  .phone-image {
+    max-width: 200px !important;
+  }
+}
+
 </style>
