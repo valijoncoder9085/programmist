@@ -32,7 +32,6 @@
         </v-row>
       </v-card>
     </div>
-
     <!-- Bizning statistika -->
     <div data-aos="fade-down-left" data-aos-offset="200" data-aos-delay="200"
          class="d-flex justify-center text-center mt-16">
@@ -556,7 +555,6 @@ export default {
 a {
   text-decoration: none;
 }
-
 .card_static {
   padding: 40px;
   border-radius: 18px;
