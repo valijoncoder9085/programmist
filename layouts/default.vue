@@ -41,13 +41,10 @@ export default {
 <style lang="scss">
 #to-top {
   position: fixed;
-  right: 180px;
-  bottom: 100px;
+  right: 30px;
+  bottom: 20px;
   opacity: 0;
-  height: 50px;
-  width: 40px;
-  border-radius: 50%;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 @media (max-width: 980px) {
